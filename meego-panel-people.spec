@@ -24,7 +24,9 @@ MeeGo people panel
 %setup -q
 
 %build
-%configure2_5x
+%configure2_5x \
+  --disable-static \
+  --with-online=connman
 
 %install
 rm -rf %{buildroot}

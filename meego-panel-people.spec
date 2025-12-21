@@ -7,6 +7,11 @@ URL: https://www.meego.com
 Release: %mkrel 1
 Source0: http://repo.meego.com/MeeGo/releases/1.1/netbook/repos/source/%{name}-%{version}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: anerley-devel
 BuildRequires: gtk2-devel
 BuildRequires: nbtk-devel
